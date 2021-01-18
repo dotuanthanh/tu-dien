@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diction</title>
+</head>
+<body>
+<input placeholder="Nhap vao" id="input">
+<button onclick="trans()">Translate</button>
+<p id="display"></p>
+</body>
+</html>
+<script>
+   var Eng=['dog','cat','Chicken','wibu','tiger','friend','father','mother']
+    var Vie=['Con Cho' ,'con meo ','con ga','ricardo','ho','ban','bo','me']
+
+   function trans(){
+
+let mark=true
+       let x=document.getElementById('input').value
+    for(let j=0;j<Eng.length-1;j++){
+        if(Eng[j]==x){
+            document.getElementById('display').innerHTML=Vie[j]
+             mark=false;
+        }
+   }
+    if(mark){
+      alert("tu nay k biet nhap lai")
+    }}
+
+
+</script>
